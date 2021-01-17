@@ -11,7 +11,7 @@ router.get('/test',(req,res)=>{
         'hello' :'test'
     });
 });
-router.post('/',(req,res)=>{
+router.post('/post',(req,res)=>{
     res.end("post");
 });
 
