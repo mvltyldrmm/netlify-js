@@ -8,7 +8,7 @@ const Intern = require('../models/Intern');
 
 router.post('/iste',(req,res,next)=>{
 
-    const intern = new Intern(event.body);
+    const intern = new Intern(req.body);
 
     const promise = intern.save();
 
