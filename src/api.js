@@ -18,6 +18,12 @@ router.get('/test',(req,res)=>{
 
 
 
+
+
+app.use('/.netlify/functions/intern',intern);
+
+
+
 app.use('/.netlify/functions/api',router);
 
 
