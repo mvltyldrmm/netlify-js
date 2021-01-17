@@ -3,16 +3,14 @@ const express = require('express');
 const serverless = require('serverless-http');
 
 const app = express();
-
-const router = express.Router();
-
-
-router.post('/post',(req,res)=>{
-    res.end("post");
-});
+const db = require('../mongodb/db')();
+const intern = require('../routes/intern');
 
 
-app.use('/.netlify/functions/post',router);
+
+app.use('/.netlify/functions/intern',intern);
+
+
 
 
 
