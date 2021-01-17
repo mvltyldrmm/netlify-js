@@ -6,7 +6,7 @@ const Intern = require('../models/Intern');
 
 
 
-router.post('/iste',(req,res,next)=>{
+router.post('/',(req,res,next)=>{
 
     const intern = new Intern(req.body);
 
