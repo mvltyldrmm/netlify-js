@@ -11,6 +11,10 @@ router.get('/test',(req,res)=>{
         'hello' :'test'
     });
 });
+router.post('/',(req,res)=>{
+    res.end("post");
+});
+
 
 app.use('/.netlify/functions/api',router);
 
