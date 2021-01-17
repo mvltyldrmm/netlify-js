@@ -6,15 +6,13 @@ const app = express();
 
 const router = express.Router();
 
-router.get('/test',(req,res)=>{
-    res.json({
-        'hello' :'test'
-    });
+
+router.post('/post',(req,res)=>{
+    res.end("post");
 });
 
 
-
-app.use('/.netlify/functions/api',router);
+app.use('/.netlify/functions/post',router);
 
 
 
